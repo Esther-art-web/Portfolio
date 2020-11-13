@@ -20,7 +20,7 @@ code h2{
     font-size: 12px;
 }
 h1{
-    font-size: 60px;
+    font-size: 50px;
 }
 a:link, a:active{
     text-decoration: none;
@@ -31,7 +31,7 @@ a:link, a:active{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 40px;
     background-color:white;
     float: left;
@@ -39,10 +39,10 @@ a:link, a:active{
 .main{
     color: white;
     height: 100vh;
-    background: url('background.jpg') no-repeat center fixed;
+    background: url('images/background.jpg') no-repeat center fixed;
     background-size: cover;
-    padding: 30% 20%;
-    width: 100%;
+    padding: 25% 20%;
+    width: 100vw;
     float: left;
     
 }
@@ -68,7 +68,7 @@ a:link, a:active{
     
 }
 .fa{
-    color: rgba(243, 123, 179);
+    color:rgba(243, 123, 179);
     /* text-shadow: 1px 1px 2px blue; */
 }
 
@@ -77,15 +77,19 @@ li.nav{
     float: left;
     font-size: 20px;
 }
-ul.social-icon{
+li.nav:hover{
+    margin: 0px 5px;
+   
+}
+.social-icon{
     list-style-type: none;
-    margin-left: 30px;
+    margin-left: 100px;
     
 }
 li.social{
-    margin: 5px 5px;
+    margin: 5px 3px;
     float: left;
-    font-size: 15px;
+    font-size: 12px;
 }
 .section{
     margin: 10px 30px;
@@ -93,4 +97,38 @@ li.social{
 .tag{
     font-size: 20px;
     font-family: Dancing Script;
+}
+.container{
+    width: 100vw;
+    height: auto;
+    overflow-y: scroll;
+}
+.images{
+    width: 40%;
+    height: auto;
+    margin: 10px ;
+    border: 2px solid blue;
+    box-shadow: 5px 5px 5px rgba(243, 123, 179);
+}
+.images:hover{
+    width: 95%;
+    margin: 5% 2.5%;
+}
+.images:focus{
+    width: 95%;
+    margin: 5% 2.5%;
+}
+.imgContainer{
+    margin-top: 15px;
+    border: 5px solid black;
+    
+}
+.hover{
+    border: 1px solid black;
+    padding: 5px 20%;
+    margin: 5px;
+}
+.skill{
+    margin-top: 5px;
+    border: 1px solid black;
 }
